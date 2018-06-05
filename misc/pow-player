@@ -1,0 +1,30 @@
+#!/bin/bash
+# /etc/init.d/pow-player
+
+### BEGIN INIT INFO
+# Provides:          pow-player
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Starts pow-player app
+# Description:       This service is used to start pow-player app
+### END INIT INFO
+
+
+case "$1" in
+	start)
+		echo "Starting pow-player"
+		/home/pi/pow-player/bin/pow-player
+		;;
+	stop)
+		echo "Stopping pow-player"
+		killall pow-player
+		;;
+	*)
+		echo "Usage: /etc/init.d/pow-player start|stop"
+		exit 1
+		;;
+esac
+
+exit 0

@@ -1,0 +1,22 @@
+{
+  "players": [
+    {
+      "name": "localhost",
+      "ip": "127.0.0.1",
+      "rs232": "true",
+      "id": "7a2ed3f0-68c7-11e8-bc82-97c551239b71"
+    },
+    {
+      "name": "test",
+      "ip": "192.168.43.118",
+      "rs232": "false",
+      "id": "dfacd270-68d8-11e8-83f4-1d7c0df15e04"
+    }
+  ],
+  "cron": {
+    "startH": "19",
+    "startM": "33",
+    "endH": "19",
+    "endM": "40"
+  }
+}
