@@ -1,0 +1,30 @@
+#!/bin/bash
+# /etc/init.d/pow-player-admin
+
+### BEGIN INIT INFO
+# Provides:          pow-player-admin
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Starts pow-player-admin app
+# Description:       This service is used to start pow-player-admin app
+### END INIT INFO
+
+
+case "$1" in
+	start)
+		echo "Starting pow-player-admin"
+		sudo /home/pi/.nvm/versions/node/v8.7.0/bin/node /home/pi/pow-player-admin/index.js
+		;;
+	stop)
+		echo "Stopping pow-player-admin"
+		sudo killall node
+		;;
+	*)
+		echo "Usage: /etc/init.d/pow-player start|stop"
+		exit 1
+		;;
+esac
+
+exit 0

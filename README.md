@@ -17,6 +17,14 @@ Clone then `npm i`.
 -   `npm start` for the frontend
 -   `npm run server:dev` for the server
 
-## Run it forever
+## `init.d` script
 
-Use http://pm2.keymetrics.io/ to run at startup http://pm2.keymetrics.io/docs/usage/startup/ .
+Copy the following:
+
+```
+sudo cp misc/pow-player-admin /etc/init.d/
+sudo chmod +x /etc/init.d/pow-player-admin
+sudo update-rc.d pow-player-admin defaults
+```
+
+This will make the app run at startup
