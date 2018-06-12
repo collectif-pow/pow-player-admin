@@ -6,7 +6,7 @@ import Snackbar from '@material-ui/core/Snackbar';
 import IconButton from '@material-ui/core/IconButton';
 import PlayArrow from '@material-ui/icons/PlayArrow';
 import Stop from '@material-ui/icons/Stop';
-import AutoRenew from '@material-ui/icons/AutoRenew';
+import Cached from '@material-ui/icons/Cached';
 import CloseIcon from '@material-ui/icons/Close';
 import MomentUtils from 'material-ui-pickers/utils/moment-utils';
 import MuiPickersUtilsProvider from 'material-ui-pickers/utils/MuiPickersUtilsProvider';
@@ -148,7 +148,7 @@ class Controls extends Component {
 						disabled={this.state.scanDisabled}
 						className={this.state.scanDisabled ? 'rotating' : ''}
 					>
-						<AutoRenew />
+						<Cached />
 						Scan
 					</Button>
 					<MuiPickersUtilsProvider utils={MomentUtils}>
