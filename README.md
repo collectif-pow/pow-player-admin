@@ -17,6 +17,23 @@ Clone then `npm i`.
 -   `npm start` for the frontend
 -   `npm run server:dev` for the server
 
+## Configure the IP of the server
+
+```
+cd ~/pow-player-admin
+nano .env
+```
+
+Then in the file change the IP. Be careful to keep `http://` and nothing at the end of the IP. Something like this:
+
+```
+SERVER_URL=http://XXX.XXX.XXX.XXX
+```
+
+## Restart the server
+
+Turn off then on the Raspberry Pi.
+
 ## `init.d` script
 
 Copy the following:
