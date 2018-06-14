@@ -30,6 +30,10 @@ Then in the file change the IP. Be careful to keep `http://` and nothing at the 
 SERVER_URL=http://XXX.XXX.XXX.XXX
 ```
 
+## Check the date
+
+Run `date`, if the returned hour is not the right one, please run `sudo raspi-config` then I the menu "4 Internationalisation Options" set the right timezone.
+
 ## Restart the server
 
 Turn off then on the Raspberry Pi.
